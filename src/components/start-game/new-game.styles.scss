@@ -1,0 +1,120 @@
+.newStart {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  .center-screen {
+    width: 98%;
+    height: 90%;
+    background: url(../images/sven-ciupka-HyjpI3rEGGE-unsplash.jpg);
+    // background: black;
+    background-size: cover;
+    background-position: right;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    column-gap: 10px;
+    padding: 20px;
+    box-shadow: 0 0 1.5rem goldenrod;
+  }
+  .player,
+  .computer {
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    background-color: black;
+    color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid goldenrod;
+  }
+  .title {
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid goldenrod;
+  }
+  .card-draw {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dashed 1px goldenrod;
+  }
+  .start {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    p {
+      background-color: black;
+      color: goldenrod;
+      font-size: 55px;
+      padding: 16px;
+      border-radius: 40px;
+      border: 1.5px solid goldenrod;
+    }
+  }
+  button {
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 150px;
+    height: 42px;
+    font-size: 18px;
+    border: 1.4px solid goldenrod;
+    background: black;
+    color: goldenrod;
+  }
+  button:hover {
+    cursor: pointer;
+    color: white;
+    border-color: white;
+    transition: 0.4s;
+  }
+  .player2 {
+    width: 100%;
+  }
+}
+.hidden {
+  display: none;
+}
+.playerwins {
+  position: absolute;
+  padding: 65px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 60vh;
+  background-color: black;
+  text-align: center;
+  color: goldenrod;
+  margin: 20px;
+  border-radius: 50px;
+  border: solid 1px goldenrod;
+  box-shadow: 0 0 1rem goldenrod;
+}
+.winnerDiv {
+  margin-bottom: 2.5rem;
+}
+.screen-blur {
+  filter: blur(12px);
+}
+.ml-2 {
+  margin-left: 14px;
+}
+.clickLink {
+  text-decoration: none;
+  color: crimson;
+}
+.clickLink:hover {
+  color: white;
+  transition: 0.4s;
+}
