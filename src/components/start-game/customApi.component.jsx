@@ -166,7 +166,7 @@ function NewGameApi() {
       if (remaining === 0) {
         if (count.player > count.computer) {
           setWinner("Player Wins");
-        } else if (count.player === count.computer) {
+        } else if (count.player == count.computer) {
           setWinner("It's a Draw");
         } else {
           setWinner("Computer Wins");
